@@ -2,6 +2,12 @@
 
 ## Prerequisites:
 
+### minikube
+```
+minikube addons enable ingress
+minikube addons enable ingress-dns
+```
+### Kubernetes
 - Install and verify nginx.
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.45.0/deploy/static/provider/cloud/deploy.yaml
