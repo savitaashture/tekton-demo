@@ -15,7 +15,7 @@ Creates an EventListener that listens for GitHub webhook events.
    ```bash
    kubectl port-forward \
     "$(kubectl get pod --selector=eventlistener=github-listener-interceptor -oname)" \
-     8080
+     8000
    ```
 
    **Note**: Instead of port forwarding, you can set the
