@@ -32,7 +32,7 @@ kubectl get deploy -n tekton-operator
 
 Installation of Tekton Pipeline, Trigger and Dashboard with the custom resources:
 ```
-kubectl apply -f https://raw.githubusercontent.com/tektoncd/operator/main/config/crs/kubernetes/config/all/operator_v1alpha1_config_cr.yaml
+kubectl apply -f https://raw.githubusercontent.com/tektoncd/operator/v0.22.0-3/config/crs/kubernetes/config/all/operator_v1alpha1_config_cr.yaml
 ```
 
 Check the log of the Operator:
