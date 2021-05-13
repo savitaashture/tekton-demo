@@ -83,7 +83,7 @@ Configure EL URL in the GitHub webhook setting
 
 ![Webhook Configuration](https://github.com/savitaashture/tekton-demo/blob/main/image/webhook.png)
 
-Create a new PR for this repository.
+Create/reopen a PR for this repository.
 
 Check locally with the command:
 ```
@@ -91,11 +91,11 @@ kubectl get taskruns | grep github-run-
 ```
 to see the created TaskRun.
 
-## Upgrade from v0.22.0-3 to v0.23.0-1
+## Upgrade from v0.22.0-3 to v0.23.0-2
 
-Install the operator v0.23.0-1
+Install the operator v0.23.0-2
 ```
-kubectl apply -f https://storage.googleapis.com/tekton-releases/operator/previous/v0.23.0-1/release.yaml
+kubectl apply -f https://storage.googleapis.com/tekton-releases/operator/previous/v0.23.0-2/release.yaml
 ```
 
 Check the Tekton components:
@@ -109,4 +109,4 @@ Check the dashboard at http://localhost/dashboard.
 
 Dashboard v0.16.1, Trigger v0.13.0 and Pipeline v0.23.0.
 
-Open another new PR or update the existing PR for the repository to verify the upgraded tekton works.
+Open another new PR or reopen the closed PR for the repository to verify the upgraded tekton works.
