@@ -81,7 +81,7 @@ kubectl apply -f example/
 
 Configure EL URL in the GitHub webhook setting
 
-![Webhook Configuration](image/webhook.jpg)
+![Webhook Configuration](https://github.com/savitaashture/tekton-demo/blob/main/image/webhook.png)
 
 Create a new PR for this repository.
 
