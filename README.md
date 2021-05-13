@@ -52,7 +52,11 @@ After installing dashboard, install the ingress:
 kubectl apply -f ingress.yaml
 ```
 
-Visit http://localhost/dashboard for the dashboard portal.
+```
+kubectl get ingress -n tekton-pipelines
+```
+Get the URL and visit
+http://<ingressIP>/dashboard for the dashboard portal.
 
 Dashboard v0.15.0, Trigger v0.12.1 and Pipeline @v0.22.0.
 
@@ -110,3 +114,9 @@ Check the dashboard at http://localhost/dashboard.
 Dashboard v0.16.1, Trigger v0.13.0 and Pipeline v0.23.0.
 
 Open another new PR or reopen the closed PR for the repository to verify the upgraded tekton works.
+
+## Uninstall v0.23.0-2
+```
+kubectl delete -f https://raw.githubusercontent.com/tektoncd/operator/v0.23.0-2/config/crs/kubernetes/config/all/operator_v1alpha1_config_cr.yaml 
+kubectl delete -f https://storage.googleapis.com/tekton-releases/operator/previous/v0.23.0-2/release.yaml
+```
